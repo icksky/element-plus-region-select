@@ -1,0 +1,47 @@
+{
+  "name": "element-plus-region-select",
+  "version": "0.1.0",
+  "description": "A region selector for element-plus",
+  "author": {
+    "name": "Sky Chen",
+    "url": "http://github.com/icksky",
+    "email": "icksky4@gmail.com"
+  },
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/region-select.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icksky/element-plus-region-select.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icksky/element-plus-region-select/issues"
+  },
+  "homepage": "https://github.com/icksky/element-plus-region-select#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "@vue/compiler-sfc": "^3.2.26",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "core-js": "^3.20.0",
+    "element-plus": "^1.2.0-beta.6",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-define-config": "1.0.8",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "prettier": "^2.5.1",  
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vue": "^3.2.26",
+    "vue-eslint-parser": "^8.0.1"
+  },
+  "peerDependencies": {
+    "element-plus": "^1.2.0-beta.6",
+    "vue": "^3.2.26"
+  }
+}
