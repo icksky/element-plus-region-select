@@ -1,5 +1,7 @@
 # element-plus-region-select
 
+[![npm](https://img.shields.io/npm/v/element-plus-region-select)](https://www.npmjs.com/package/element-plus-region-select)
+
 [element-plus](https://github.com/element-plus/element-plus) 的地区选择器.
 
 地区数据来自 [china-area-data](https://github.com/airyland/china-area-data).
