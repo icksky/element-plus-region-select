@@ -22,7 +22,7 @@ export default defineComponent({
   name: 'RegionSelect',
   components: { ElCascader, ElCascaderPanel },
   props: {
-    modelValue: { type: [Number, String, Array] as PropType<Value>, required: true },
+    modelValue: { type: [Number, String, Array, null] as PropType<Value>, required: true },
     panel: Boolean,
     /**
      * 是否使用组件原始的数组值
@@ -45,7 +45,7 @@ export default defineComponent({
     const value = computed({
       get: () => {
         const { useArrayValue, modelValue } = props
-        if (useArrayValue) return modelValue
+        if (useArrayValue || !modelValue) return modelValue
         if (attrs.props?.multiple) {
           return (modelValue as string[]).map((val) => transferToArray(val))
         }
@@ -53,7 +53,7 @@ export default defineComponent({
       },
       set: (val: Value) => {
         const { useArrayValue } = props
-        if (useArrayValue) {
+        if (useArrayValue || !val) {
           emit(EMIT_MODEL_VALUE_EVENT, val)
           return
         }
